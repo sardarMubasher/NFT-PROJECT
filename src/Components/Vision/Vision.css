@@ -1,0 +1,127 @@
+.V-Wrapper{
+    background-image: url('https://wallpaperaccess.com/full/5143159.jpg');
+    height: 60vh;
+    margin: 3rem 0;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+padding: 2rem 0;
+    
+}
+
+.V-heading{
+    display: flex;
+    
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--white);
+}
+.V-heading>:nth-child(2)
+{
+    color: var(--green);
+}
+
+.V-Main{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    /* overflow: hidden; */
+
+}
+.V-img{
+    flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.V-img>img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+   
+}
+
+.V-Txt{
+    flex: 1;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+  
+}
+.V-Txt>span{
+   
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+   
+}
+
+
+@media (max-width:955px) {
+    
+    .V-Txt{
+        padding: 0 2rem;
+       
+    }
+    .V-Txt>span{
+        line-height: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+}
+@media (max-width:825px) {
+    
+    .V-Wrapper{
+        height:50vh;
+    }
+    .V-Main{
+        flex-direction: column;
+    }
+    .V-Txt{
+        order: 2;
+       
+       
+    }
+    .V-Txt>span{
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 0 1.5rem;
+        line-height: 1.3rem;
+    }
+
+    .V-img{
+    order: 1;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    }
+ 
+
+}
+
+@media (max-width:555px) {
+    .V-Txt{
+        padding:0;
+       
+       
+    }
+    .V-img{
+       
+        width: 80%;
+        
+        }
+    .V-Wrapper{
+        height: auto;
+    }
+    .V-Txt>span{
+    
+        padding: 1rem;
+    }
+}

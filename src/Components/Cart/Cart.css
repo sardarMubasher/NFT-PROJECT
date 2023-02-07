@@ -1,0 +1,95 @@
+
+
+.Cart-W
+{
+    width: 60%;
+    color: var(--white);
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+gap: 3rem;
+padding: 2rem 0;
+
+   
+}
+.C-Card{
+    width: 100%;
+    height: 40vh;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.C-up{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+   
+}
+.C-up>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.c-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.c-down>:nth-child(1){
+   color: var(--green);
+   font-size: 1rem;
+   font-weight: bold;
+}
+
+.empty{
+    display: flex;
+    justify-content: center;
+
+align-items: center;
+flex-direction: column;
+gap: 2rem;
+color:var(--white);
+margin: 6rem 0;
+font-weight: bold;
+font-size:2rem;
+text-align: center;
+padding: 0 2rem;
+}
+
+
+@media (max-width:1300px) {
+    
+    .Cart-W{
+        width: 80%;
+    }
+}
+
+@media (max-width:800px) {
+    
+    .Cart-W{
+        width: 95%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .C-Card{
+        height: 45vh;
+    }
+}
+
+@media (max-width:550px) {
+    
+    .Cart-W{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .C-Card{
+        height: 35vh;
+    }
+}
